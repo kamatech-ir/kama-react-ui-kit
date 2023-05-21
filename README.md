@@ -1,1 +1,0 @@
-# Collection of React UI components for Kamatech projects.
