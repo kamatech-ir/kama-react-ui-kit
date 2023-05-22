@@ -3,7 +3,16 @@ import { render } from '@testing-library/react';
 
 import 'jest-canvas-mock';
 
-import { KamaSample, KamaIcon, KamaButton, KamaBreadcrumb, KamaActionButton, KamaCheckbox, KamaControl } from '../src';
+import {
+  KamaSample,
+  KamaIcon,
+  KamaButton,
+  KamaBreadcrumb,
+  KamaActionButton,
+  KamaCheckbox,
+  KamaControl,
+  KamaAttachment,
+} from '../src';
 
 describe('Common render', () => {
   it('renders without crashing', () => {
@@ -25,6 +34,7 @@ describe('Common render', () => {
         <KamaControl.Wrapper>
           <KamaControl active={false}>test</KamaControl>
         </KamaControl.Wrapper>
+        <KamaAttachment file={{}} />
       </>,
     );
   });
