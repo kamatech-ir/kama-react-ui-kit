@@ -202,7 +202,7 @@ function KamaIcon({ icon, className = '', ...props }: KamaIconProps) {
         setImageSource(content.default);
       })
       .catch(() => {
-        console.log("error on loading the icon's image file");
+        console.log(`error on loading the ${displayIcon} icon's image file`);
       });
   }, [icon]);
 
