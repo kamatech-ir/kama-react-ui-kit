@@ -19,7 +19,7 @@ function KamaSample({ defaultValue = 0 }: KamaSampleProps) {
   };
 
   return (
-    <div>
+    <div className='KamaSample'>
       <span>current value: {count}</span>
       <span onClick={inc}>+</span> / <span onClick={dec}>-</span>
     </div>
