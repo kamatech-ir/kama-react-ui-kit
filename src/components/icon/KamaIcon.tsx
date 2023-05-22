@@ -197,8 +197,7 @@ function KamaIcon({ icon, className = '', ...props }: KamaIconProps) {
         break;
     }
 
-    const baseUrl = process.env.REACT_APP_KRUK_ICON_BASE_URL || 'assets/images/icons';
-    import(`${baseUrl}/${displayIcon}.svg`)
+    import(`assets/images/icons/${displayIcon}.svg`)
       .then((content) => {
         setImageSource(content.default);
       })

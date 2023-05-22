@@ -1,4 +1,5 @@
 import KamaSample from './components/sample/KamaSample';
 import KamaIcon from './components/icon/KamaIcon';
 import KamaButton from './components/button/KamaButton';
-export { KamaSample, KamaIcon, KamaButton };
+import KamaBreadcrumb from './components/breadcrumb/KamaBreadcrumb';
+export { KamaSample, KamaIcon, KamaButton, KamaBreadcrumb };

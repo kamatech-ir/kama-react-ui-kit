@@ -3,8 +3,7 @@ import { render } from '@testing-library/react';
 
 import 'jest-canvas-mock';
 
-import { KamaButton, KamaSample } from '../src';
-import { KamaIcon } from '../src';
+import { KamaSample, KamaIcon, KamaButton, KamaBreadcrumb } from '../src';
 
 describe('Common render', () => {
   it('renders without crashing', () => {
@@ -13,6 +12,7 @@ describe('Common render', () => {
         <KamaSample />
         <KamaIcon icon='clock' />
         <KamaButton>test</KamaButton>
+        <KamaBreadcrumb sitemap={[]} pathname={'/'} />
       </>,
     );
   });
