@@ -12,6 +12,7 @@ import {
   KamaCheckbox,
   KamaControl,
   KamaAttachment,
+  KamaDataTable,
 } from '../src';
 
 describe('Common render', () => {
@@ -35,6 +36,7 @@ describe('Common render', () => {
           <KamaControl active={false}>test</KamaControl>
         </KamaControl.Wrapper>
         <KamaAttachment file={{}} />
+        <KamaDataTable columns={[]} data={[]} />
       </>,
     );
   });
