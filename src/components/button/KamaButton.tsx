@@ -36,7 +36,7 @@ function KamaButton<T extends KamaButtonTypes>({
   children,
   ...props
 }: KamaButtonProps<T>) {
-  const classList = classNames('KamaIcon', className, [color], {
+  const classList = classNames('KamaButton', className, [color], {
     outlined: as === KamaButtonTypes.LINK || outlined,
     withIcon: as !== KamaButtonTypes.LINK && !!icon,
     disabled: disabled,
