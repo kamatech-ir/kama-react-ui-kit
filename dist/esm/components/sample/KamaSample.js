@@ -12,7 +12,7 @@ function KamaSample(_a) {
             return prev - 1;
         });
     };
-    return (React.createElement("div", null,
+    return (React.createElement("div", { className: 'KamaSample' },
         React.createElement("span", null,
             "current value: ",
             count),

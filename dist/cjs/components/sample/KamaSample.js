@@ -15,7 +15,7 @@ function KamaSample(_a) {
             return prev - 1;
         });
     };
-    return (react_1.default.createElement("div", null,
+    return (react_1.default.createElement("div", { className: 'KamaSample' },
         react_1.default.createElement("span", null,
             "current value: ",
             count),
