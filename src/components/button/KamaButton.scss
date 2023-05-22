@@ -1,0 +1,154 @@
+.KamaIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  height: 40px;
+  padding: 2px 15px 0;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  text-decoration: none;
+  font-family: IRANYekanX, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+
+  &.withIcon {
+    padding-right: 0;
+  }
+
+  &.empty {
+    min-width: 40px;
+    padding: 0;
+  }
+
+  &.DEFAULT {
+    background-color: var(--white);
+    color: var(--black);
+    border-color: var(--gray3);
+  }
+
+  &.PRIMARY {
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+
+    &.outlined {
+      color: var(--primary);
+    }
+  }
+
+  &.CANCEL {
+    background-color: var(--gray2);
+    color: var(--gray5);
+    border-color: transparent;
+
+    &.outlined {
+      color: var(--primary);
+    }
+
+    &:hover {
+      box-shadow: 0 10px 15px rgba(var(--gray2), 0.3);
+    }
+
+    img {
+      filter: none;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 10px 15px rgba(var(--primary), 0.3);
+  }
+
+  &:disabled {
+    background-color: var(--gray3);
+    border-color: var(--gray3);
+    cursor: default;
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    &.outlined {
+      color: var(--gray3);
+    }
+  }
+
+  &:not(:disabled) {
+    &:active {
+      background-color: var(--primary-dark);
+
+      &.CANCEL {
+        background-color: var(--gray3);
+      }
+    }
+  }
+
+  img {
+    filter: brightness(15000%) grayscale(1);
+  }
+
+  &.outlined {
+    background-color: transparent;
+
+    &:hover {
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    &:disabled {
+      color: var(--gray3);
+      border-color: var(--gray3);
+
+      &:hover {
+        box-shadow: none;
+      }
+
+      img {
+        filter: brightness(100%) grayscale(1) opacity(0.5);
+      }
+    }
+
+    &:not(:disabled) {
+      &:active {
+        background-color: transparent;
+        color: var(--primary-dark);
+        border-color: var(--primary-dark);
+      }
+    }
+
+    img {
+      filter: none;
+    }
+  }
+}
+
+a.container,
+span.container {
+  &.outlined {
+    border: none;
+
+    &:hover {
+      color: var(--highlight);
+      box-shadow: none;
+    }
+
+    &.disabled {
+      color: var(--gray3);
+      cursor: default;
+
+      &:active {
+        color: var(--gray3);
+      }
+    }
+  }
+}
+
+@supports (font-variation-settings: normal) {
+  .container {
+    font-family: 'IRANYekanXVF', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+      'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-feature-settings: 'ss02';
+  }
+}

@@ -1,2 +1,18 @@
 @import 'components/sample/KamaSample.scss';
 @import 'components/icon/KamaIcon.scss';
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #f1f1f5;
+  --gray1: #f2f4f5;
+  --gray2: #e8eaeb;
+  --gray3: #cacccc;
+  --gray4: #8b8c8c;
+  --gray5: #323333;
+  --primary: #019cb0;
+  --primary-dark: #018c9e;
+  --highlight: #00bafb;
+  --red: #ff3b30;
+  --yellow: #f2b705;
+}
