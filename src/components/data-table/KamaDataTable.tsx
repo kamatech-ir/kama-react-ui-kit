@@ -1,5 +1,6 @@
 import React from 'react';
 import KamaIcon from '../icon/KamaIcon';
+import EmptySVG from '../../assets/images/empty.svg';
 
 type KamaDataTableProps = {
   columns: any[];
@@ -77,7 +78,7 @@ function KamaDataTable({ columns = [], data = [], actions = [], loadMore, total,
         </table>
       ) : (
         <div className='empty'>
-          {/* <img src={EmptySVG} alt='موردی برای نمایش پیدا نشد' /> */}
+          <img src={EmptySVG} alt='موردی برای نمایش پیدا نشد' />
           <span>موردی برای نمایش پیدا نشد :(</span>
         </div>
       )}

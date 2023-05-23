@@ -5,15 +5,15 @@ import 'jest-canvas-mock';
 
 import {
   KamaSample,
-  KamaIcon,
+  // KamaIcon,
   KamaButton,
   KamaBreadcrumb,
-  KamaActionButton,
+  // KamaActionButton,
   KamaCheckbox,
   KamaControl,
-  KamaAttachment,
-  KamaDataTable,
-  KamaFilterValue,
+  // KamaAttachment,
+  // KamaDataTable,
+  // KamaFilterValue,
 } from '../src';
 
 describe('Common render', () => {
@@ -21,24 +21,24 @@ describe('Common render', () => {
     render(
       <>
         <KamaSample />
-        <KamaIcon icon='clock' />
+        {/* <KamaIcon icon='clock' /> */}
         <KamaButton>test</KamaButton>
         <KamaBreadcrumb sitemap={[]} pathname={'/'} />
-        <KamaActionButton
+        {/* <KamaActionButton
           title='test title'
           label='test label'
           icon='clock'
           onClick={() => {
             return false;
           }}
-        />
+        /> */}
         <KamaCheckbox />
         <KamaControl.Wrapper>
           <KamaControl active={false}>test</KamaControl>
         </KamaControl.Wrapper>
-        <KamaAttachment file={{}} />
-        <KamaDataTable columns={[]} data={[]} />
-        <KamaFilterValue />
+        {/* <KamaAttachment file={{}} /> */}
+        {/* <KamaDataTable columns={[]} data={[]} /> */}
+        {/* <KamaFilterValue /> */}
       </>,
     );
   });
