@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = require("tslib");
 var react_1 = tslib_1.__importDefault(require("react"));
 var KamaIcon_1 = tslib_1.__importDefault(require("../icon/KamaIcon"));
-var empty_svg_1 = tslib_1.__importDefault(require("../../../dist/assets/images/empty.svg"));
+var empty_svg_1 = tslib_1.__importDefault(require("../../assets/images/empty.svg"));
 function KamaDataTable(_a) {
     var _b = _a.columns, columns = _b === void 0 ? [] : _b, _c = _a.data, data = _c === void 0 ? [] : _c, _d = _a.actions, actions = _d === void 0 ? [] : _d, loadMore = _a.loadMore, total = _a.total, isLoading = _a.isLoading;
     return (react_1.default.createElement("div", { className: 'KamaDataTable' }, data.length || (!data.length && isLoading) ? (react_1.default.createElement("table", null,

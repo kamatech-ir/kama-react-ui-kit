@@ -1,0 +1,90 @@
+.KamaModal {
+  background: radial-gradient(
+    at bottom left,
+    rgba(1, 156, 176, 0.8) 0,
+    rgba(1, 156, 176, 0.8) 5%,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+
+  &.sidebarExpanded {
+    .body {
+      width: calc(100% - 40px - 270px);
+    }
+  }
+
+  &.bottomSpace {
+    .body {
+      .content {
+        padding: 0 20px 170px;
+      }
+    }
+  }
+
+  .body {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 40px - 60px);
+    position: absolute;
+    bottom: 80px;
+    left: 20px;
+    border-radius: 20px;
+    border: 0.4px solid var(--gray3);
+
+    &::before {
+      content: 'برای بستن کلید Esc را بزنید.';
+      color: var(--gray3);
+      position: absolute;
+      top: -20px;
+      left: 15px;
+      font-weight: 400;
+      font-size: 10px;
+    }
+
+    .header {
+      display: flex;
+      padding: 20px;
+
+      .titles {
+        flex: 1;
+
+        .title {
+          color: var(--primary);
+          margin-bottom: 5px;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        .subTitle {
+          color: var(--gray3);
+          font-weight: 400;
+          font-size: 13px;
+        }
+      }
+
+      .close {
+        cursor: pointer;
+      }
+    }
+
+    .content {
+      flex: 1;
+      padding: 0 20px 20px;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+
+    .footer {
+      display: flex;
+      gap: 20px;
+      position: absolute;
+      bottom: -60px;
+    }
+  }
+}

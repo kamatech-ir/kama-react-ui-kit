@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .KamaActionButton {
   display: flex;
   gap: 20px;
@@ -176,27 +177,27 @@
   filter: none;
 }
 
-a.container.outlined,
-span.container.outlined {
+a.KamaButton.outlined,
+span.KamaButton.outlined {
   border: none;
 }
-a.container.outlined:hover,
-span.container.outlined:hover {
+a.KamaButton.outlined:hover,
+span.KamaButton.outlined:hover {
   color: var(--highlight);
   box-shadow: none;
 }
-a.container.outlined.disabled,
-span.container.outlined.disabled {
+a.KamaButton.outlined.disabled,
+span.KamaButton.outlined.disabled {
   color: var(--gray3);
   cursor: default;
 }
-a.container.outlined.disabled:active,
-span.container.outlined.disabled:active {
+a.KamaButton.outlined.disabled:active,
+span.KamaButton.outlined.disabled:active {
   color: var(--gray3);
 }
 
 @supports (font-variation-settings: normal) {
-  .container {
+  .KamaButton {
     font-family: "IRANYekanXVF", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-feature-settings: "ss02";
   }
@@ -329,18 +330,18 @@ span.container.outlined.disabled:active {
   border: 1px solid var(--gray3);
 }
 
-.container {
+.KamaDataTable {
   padding: 20px 0;
 }
-.container table {
+.KamaDataTable table {
   width: 100%;
   border-collapse: collapse;
   position: relative;
 }
-.container table img {
+.KamaDataTable table img {
   cursor: pointer;
 }
-.container table thead th {
+.KamaDataTable table thead th {
   background-color: var(--white);
   color: var(--gray4);
   text-align: right;
@@ -350,21 +351,21 @@ span.container.outlined.disabled:active {
   position: sticky;
   top: 0;
 }
-.container table thead th:last-child {
+.KamaDataTable table thead th:last-child {
   display: flex;
   justify-content: flex-end;
 }
-.container table tbody tr:not(.loadMore):hover {
+.KamaDataTable table tbody tr:not(.loadMore):hover {
   background-color: var(--gray1);
 }
-.container table tbody tr:not(.loadMore):hover td:first-child {
+.KamaDataTable table tbody tr:not(.loadMore):hover td:first-child {
   padding-right: 10px;
   padding-left: 0;
 }
-.container table tbody tr:not(.loadMore):hover td:last-child {
+.KamaDataTable table tbody tr:not(.loadMore):hover td:last-child {
   visibility: visible;
 }
-.container table tbody tr:not(.loadMore) td {
+.KamaDataTable table tbody tr:not(.loadMore) td {
   color: var(--gray5);
   height: 20px;
   padding-left: 10px;
@@ -372,38 +373,38 @@ span.container.outlined.disabled:active {
   font-weight: 500;
   transition: padding 0.4s ease;
 }
-.container table tbody tr:not(.loadMore) td:last-child {
+.KamaDataTable table tbody tr:not(.loadMore) td:last-child {
   visibility: hidden;
   display: flex;
   justify-content: flex-end;
   padding: 0;
 }
-.container table tbody tr:not(.loadMore) td .content {
+.KamaDataTable table tbody tr:not(.loadMore) td .content {
   display: flex;
   align-items: flex-start;
   margin-top: 20px;
   height: 100%;
 }
-.container table tbody tr.loadMore td {
+.KamaDataTable table tbody tr.loadMore td {
   height: 40px;
   text-align: center;
   color: var(--gray4);
   cursor: pointer;
 }
-.container table tbody tr.loadMore td:hover {
+.KamaDataTable table tbody tr.loadMore td:hover {
   color: var(--gray5);
   background-color: var(--gray2);
 }
-.container .empty {
+.KamaDataTable .empty {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 70px;
 }
-.container .empty img {
+.KamaDataTable .empty img {
   height: 386px;
 }
-.container .empty span {
+.KamaDataTable .empty span {
   color: var(--gray4);
   font-weight: 600;
   font-size: 20px;
@@ -448,12 +449,252 @@ span.container.outlined.disabled:active {
   height: 40px;
 }
 
-.KamaIcon {
+.KamaInput {
+  position: relative;
+  width: 100%;
+}
+.KamaInput.error::after {
+  content: attr(data-error);
+  background-color: var(--red);
+  color: var(--white);
+  display: flex;
+  align-items: flex-end;
+  padding: 3px 15px;
+  border-radius: 15px;
+  width: calc(100% - 30px);
+  height: 37px;
+  position: absolute;
+  top: 25px;
+  z-index: -1;
+  font-size: 10px;
+  font-weight: 400;
+}
+.KamaInput.error input,
+.KamaInput.error textarea {
+  background-color: var(--white);
+  border: 1px solid var(--red);
+  position: relative;
+}
+.KamaInput.compact {
+  min-height: 40px;
+}
+.KamaInput.compact label span {
+  top: 12px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.KamaInput.compact label .icon {
+  top: 0;
+}
+.KamaInput.compact label input,
+.KamaInput.compact label textarea {
+  height: 40px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.KamaInput.compact label input:focus ~ span, .KamaInput.compact label input:not(:placeholder-shown) ~ span,
+.KamaInput.compact label textarea:focus ~ span,
+.KamaInput.compact label textarea:not(:placeholder-shown) ~ span {
+  top: 4px;
+}
+.KamaInput.hasIcon label span {
+  right: 45px;
+}
+.KamaInput.hasIcon label input,
+.KamaInput.hasIcon label textarea {
+  padding-right: 45px;
+}
+.KamaInput.hasIcon label input:hover,
+.KamaInput.hasIcon label textarea:hover {
+  padding-right: 45px;
+}
+.KamaInput.hasIcon label input:focus,
+.KamaInput.hasIcon label textarea:focus {
+  padding-right: 45px;
+}
+.KamaInput label {
+  display: block;
+  width: 100%;
+}
+.KamaInput label span {
+  color: var(--gray4);
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: text;
+}
+.KamaInput label .icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 9;
+}
+.KamaInput label .indicator {
+  color: var(--gray4);
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  font-size: 10px;
+}
+.KamaInput label input,
+.KamaInput label textarea {
+  color: var(--gray5);
+  width: 100%;
+  height: 50px;
+  padding: 13px 20px 0 0;
+  border: 1px solid var(--gray2);
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.KamaInput label input:hover,
+.KamaInput label textarea:hover {
+  padding-right: 20px;
+  border: 1px solid var(--primary);
+}
+.KamaInput label input:focus,
+.KamaInput label textarea:focus {
+  padding-right: 20px;
+  outline-color: var(--primary);
+}
+.KamaInput label input:focus ~ span, .KamaInput label input:not(:placeholder-shown) ~ span,
+.KamaInput label textarea:focus ~ span,
+.KamaInput label textarea:not(:placeholder-shown) ~ span {
+  top: 7.5px;
+  font-size: 10px;
+  font-weight: 400;
+}
+.KamaInput label textarea {
+  padding: 22px 20px 0 0;
+  resize: vertical;
+  height: 100px;
+}
+
+.KamaLink {
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+  padding: 5px 5.6px 5px 16px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+.KamaLink.disabled {
+  color: var(--gray3);
+  cursor: default;
+}
+.KamaLink.disabled .icon img {
+  filter: brightness(1000%) grayscale(1);
+}
+.KamaLink.disabled:hover .icon {
+  background-color: transparent;
+}
+.KamaLink.disabled:hover .icon img {
+  filter: brightness(1000%) grayscale(1);
+}
+.KamaLink.disabled:active {
+  color: var(--gray3);
+}
+.KamaLink.disabled:active .icon {
+  background-color: var(--transparent);
+}
+.KamaLink:hover .icon {
+  background-color: var(--primary);
+}
+.KamaLink:hover .icon img {
+  filter: brightness(15000%) grayscale(1);
+}
+.KamaLink:active {
+  color: var(--primary-dark);
+}
+.KamaLink:active .icon {
+  background-color: var(--primary-dark);
+}
+.KamaLink .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+.KamaLink .icon img {
+  height: 100%;
+  transform: rotate(270deg);
+}
+
+.KamaModal {
+  background: radial-gradient(at bottom left, rgba(1, 156, 176, 0.8) 0, rgba(1, 156, 176, 0.8) 5%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+}
+.KamaModal.sidebarExpanded .body {
+  width: calc(100% - 40px - 270px);
+}
+.KamaModal.bottomSpace .body .content {
+  padding: 0 20px 170px;
+}
+.KamaModal .body {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 40px - 60px);
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  border-radius: 20px;
+  border: 0.4px solid var(--gray3);
+}
+.KamaModal .body::before {
+  content: "برای بستن کلید Esc را بزنید.";
+  color: var(--gray3);
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  font-weight: 400;
+  font-size: 10px;
+}
+.KamaModal .body .header {
+  display: flex;
+  padding: 20px;
+}
+.KamaModal .body .header .titles {
+  flex: 1;
+}
+.KamaModal .body .header .titles .title {
+  color: var(--primary);
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.KamaModal .body .header .titles .subTitle {
+  color: var(--gray3);
+  font-weight: 400;
+  font-size: 13px;
+}
+.KamaModal .body .header .close {
+  cursor: pointer;
+}
+.KamaModal .body .content {
+  flex: 1;
+  padding: 0 20px 20px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+.KamaModal .body .footer {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: -60px;
 }
 
 .KamaSample {
