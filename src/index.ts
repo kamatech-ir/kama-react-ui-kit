@@ -9,6 +9,7 @@ import KamaFilterValue from './components/filter-value/KamaFilterValue';
 import KamaIcon from './components/icon/KamaIcon';
 import KamaInput from './components/input/KamaInput';
 import KamaSample from './components/sample/KamaSample';
+import KamaValue from './components/value/KamaValue';
 
 export {
   KamaActionButton,
@@ -22,4 +23,5 @@ export {
   KamaIcon,
   KamaInput,
   KamaSample,
+  KamaValue,
 };

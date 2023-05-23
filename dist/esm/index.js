@@ -9,5 +9,6 @@ import KamaFilterValue from './components/filter-value/KamaFilterValue';
 import KamaIcon from './components/icon/KamaIcon';
 import KamaInput from './components/input/KamaInput';
 import KamaSample from './components/sample/KamaSample';
-export { KamaActionButton, KamaAttachment, KamaBreadcrumb, KamaButton, KamaCheckbox, KamaControl, KamaDataTable, KamaFilterValue, KamaIcon, KamaInput, KamaSample, };
+import KamaValue from './components/value/KamaValue';
+export { KamaActionButton, KamaAttachment, KamaBreadcrumb, KamaButton, KamaCheckbox, KamaControl, KamaDataTable, KamaFilterValue, KamaIcon, KamaInput, KamaSample, KamaValue, };
 //# sourceMappingURL=index.js.map
