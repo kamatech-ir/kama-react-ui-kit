@@ -21,7 +21,9 @@ function KamaModal({
   footer,
   bottomSpace = true,
   notice,
-  setIsModalVisible,
+  setIsModalVisible = () => {
+    return false;
+  },
   sidebar,
   children,
 }: KamaModalProps) {
