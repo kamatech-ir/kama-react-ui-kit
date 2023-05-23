@@ -1,0 +1,511 @@
+.KamaActionButton {
+  display: flex;
+  gap: 20px;
+  border: 1px solid var(--gray3);
+  border-radius: 20px;
+  padding: 20px;
+}
+.KamaActionButton .description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.KamaActionButton .description .title {
+  color: var(--gray4);
+  font-weight: 400;
+  font-size: 10px;
+}
+.KamaActionButton .description .subtitle {
+  color: var(--gray5);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.KamaAttachment {
+  background-color: var(--primary);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+  border-radius: 20px;
+  position: relative;
+}
+.KamaAttachment .fileName {
+  color: var(--gray1);
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+.KamaAttachment .action {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+.KamaAttachment .action img {
+  filter: brightness(10000%) grayscale(1);
+}
+
+.KamaBreadcrumb {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.KamaBreadcrumb img {
+  width: 30px;
+  filter: invert(84%) sepia(12%) saturate(4613%) hue-rotate(166deg) brightness(110%) contrast(89%);
+  cursor: initial;
+}
+.KamaBreadcrumb .item {
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.KamaBreadcrumb .item:last-child {
+  color: var(--white);
+}
+.KamaBreadcrumb .item:last-child a {
+  color: var(--white);
+}
+.KamaBreadcrumb .item a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.KamaButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  height: 40px;
+  padding: 2px 15px 0;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  text-decoration: none;
+  font-family: IRANYekanX, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.KamaButton.withIcon {
+  padding-right: 0;
+}
+.KamaButton.empty {
+  min-width: 40px;
+  padding: 0;
+}
+.KamaButton.DEFAULT {
+  background-color: var(--white);
+  color: var(--black);
+  border-color: var(--gray3);
+}
+.KamaButton.PRIMARY {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}
+.KamaButton.PRIMARY.outlined {
+  color: var(--primary);
+}
+.KamaButton.CANCEL {
+  background-color: var(--gray2);
+  color: var(--gray5);
+  border-color: transparent;
+}
+.KamaButton.CANCEL.outlined {
+  color: var(--primary);
+}
+.KamaButton.CANCEL:hover {
+  box-shadow: 0 10px 15px rgba(var(--gray2), 0.3);
+}
+.KamaButton.CANCEL img {
+  filter: none;
+}
+.KamaButton:hover {
+  box-shadow: 0 10px 15px rgba(var(--primary), 0.3);
+}
+.KamaButton:disabled {
+  background-color: var(--gray3);
+  border-color: var(--gray3);
+  cursor: default;
+}
+.KamaButton:disabled:hover {
+  box-shadow: none;
+}
+.KamaButton:disabled.outlined {
+  color: var(--gray3);
+}
+.KamaButton:not(:disabled):active {
+  background-color: var(--primary-dark);
+}
+.KamaButton:not(:disabled):active.CANCEL {
+  background-color: var(--gray3);
+}
+.KamaButton img {
+  filter: brightness(15000%) grayscale(1);
+}
+.KamaButton.outlined {
+  background-color: transparent;
+}
+.KamaButton.outlined:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+.KamaButton.outlined:disabled {
+  color: var(--gray3);
+  border-color: var(--gray3);
+}
+.KamaButton.outlined:disabled:hover {
+  box-shadow: none;
+}
+.KamaButton.outlined:disabled img {
+  filter: brightness(100%) grayscale(1) opacity(0.5);
+}
+.KamaButton.outlined:not(:disabled):active {
+  background-color: transparent;
+  color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+.KamaButton.outlined img {
+  filter: none;
+}
+
+a.container.outlined,
+span.container.outlined {
+  border: none;
+}
+a.container.outlined:hover,
+span.container.outlined:hover {
+  color: var(--highlight);
+  box-shadow: none;
+}
+a.container.outlined.disabled,
+span.container.outlined.disabled {
+  color: var(--gray3);
+  cursor: default;
+}
+a.container.outlined.disabled:active,
+span.container.outlined.disabled:active {
+  color: var(--gray3);
+}
+
+@supports (font-variation-settings: normal) {
+  .container {
+    font-family: "IRANYekanXVF", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-feature-settings: "ss02";
+  }
+}
+.KamaCheckbox {
+  color: var(--gray5);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.KamaCheckbox.error {
+  color: var(--red);
+}
+.KamaCheckbox.error input[type=checkbox]:checked ~ .box {
+  background-color: var(--white);
+}
+.KamaCheckbox.error input[type=checkbox]:checked ~ .box::after {
+  content: " ";
+  background-color: var(--red);
+}
+.KamaCheckbox.error input[type=checkbox]:checked ~ .toggle {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+.KamaCheckbox.error .box {
+  border-color: var(--red);
+}
+.KamaCheckbox.error .toggle {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+.KamaCheckbox.disabled {
+  color: var(--gray3);
+}
+.KamaCheckbox.disabled input[type=checkbox]:checked ~ .box {
+  background-color: var(--gray3);
+}
+.KamaCheckbox.disabled input[type=checkbox]:checked ~ .toggle {
+  background-color: var(--gray2);
+  border-color: var(--gray2);
+}
+.KamaCheckbox.disabled .box {
+  border-color: var(--gray3);
+}
+.KamaCheckbox.disabled .toggle {
+  background-color: var(--gray2);
+  border-color: var(--gray2);
+}
+.KamaCheckbox input[type=checkbox] {
+  display: none;
+}
+.KamaCheckbox input[type=checkbox]:checked ~ .box {
+  background-color: var(--primary);
+}
+.KamaCheckbox input[type=checkbox]:checked ~ .box::after {
+  content: " ";
+  background-color: var(--white);
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+}
+.KamaCheckbox input[type=checkbox]:checked ~ .toggle {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.KamaCheckbox input[type=checkbox]:checked ~ .toggle::after {
+  left: 20px;
+}
+.KamaCheckbox .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+}
+.KamaCheckbox .toggle {
+  background-color: var(--gray3);
+  width: 40px;
+  height: 20px;
+  position: relative;
+  border: 2.5px solid var(--gray3);
+  border-radius: 7.5px;
+}
+.KamaCheckbox .toggle::after {
+  content: " ";
+  background-color: var(--white);
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  box-shadow: 0px 2.5px 2.5px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+
+.KamaControlWrapper {
+  background-color: var(--gray2);
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 40px;
+  padding: 5px;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+.KamaControl {
+  background-color: transparent;
+  color: var(--gray5);
+  min-width: 150px;
+  height: 30px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+.KamaControl.active {
+  background-color: var(--white);
+  color: var(--primary);
+  border: 1px solid var(--gray3);
+}
+
+.container {
+  padding: 20px 0;
+}
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+}
+.container table img {
+  cursor: pointer;
+}
+.container table thead th {
+  background-color: var(--white);
+  color: var(--gray4);
+  text-align: right;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  position: sticky;
+  top: 0;
+}
+.container table thead th:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.container table tbody tr:not(.loadMore):hover {
+  background-color: var(--gray1);
+}
+.container table tbody tr:not(.loadMore):hover td:first-child {
+  padding-right: 10px;
+  padding-left: 0;
+}
+.container table tbody tr:not(.loadMore):hover td:last-child {
+  visibility: visible;
+}
+.container table tbody tr:not(.loadMore) td {
+  color: var(--gray5);
+  height: 20px;
+  padding-left: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: padding 0.4s ease;
+}
+.container table tbody tr:not(.loadMore) td:last-child {
+  visibility: hidden;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+.container table tbody tr:not(.loadMore) td .content {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+  height: 100%;
+}
+.container table tbody tr.loadMore td {
+  height: 40px;
+  text-align: center;
+  color: var(--gray4);
+  cursor: pointer;
+}
+.container table tbody tr.loadMore td:hover {
+  color: var(--gray5);
+  background-color: var(--gray2);
+}
+.container .empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+.container .empty img {
+  height: 386px;
+}
+.container .empty span {
+  color: var(--gray4);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.KamaFilterValueWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.KamaFilterValueIndicator {
+  color: var(--gray5);
+}
+
+.KamaFilterValue {
+  background-color: var(--gray2);
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 10px;
+}
+.KamaFilterValue img {
+  cursor: pointer;
+}
+.KamaFilterValue label {
+  margin-left: 10px;
+}
+.KamaFilterValue .value {
+  background-color: var(--white);
+  margin-left: 10px;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+.KamaIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.KamaIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.KamaSample {
+  background-color: lightcyan;
+}
+.KamaSample span {
+  min-width: 10px;
+  text-align: center;
+}
+
+.KamaValue {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 50px;
+}
+.KamaValue .rect {
+  background-color: var(--primary);
+  width: 5px;
+  height: 30px;
+}
+.KamaValue .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.KamaValue .wrapper .label {
+  color: var(--gray4);
+  font-weight: 400;
+  font-size: 10px;
+}
+.KamaValue .wrapper .value {
+  color: var(--gray5);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #f1f1f5;
+  --gray1: #f2f4f5;
+  --gray2: #e8eaeb;
+  --gray3: #cacccc;
+  --gray4: #8b8c8c;
+  --gray5: #323333;
+  --primary: #019cb0;
+  --primary-dark: #018c9e;
+  --highlight: #00bafb;
+  --red: #ff3b30;
+  --yellow: #f2b705;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -124,8 +124,8 @@
   }
 }
 
-a.container,
-span.container {
+a.KamaButton,
+span.KamaButton {
   &.outlined {
     border: none;
 
@@ -146,7 +146,7 @@ span.container {
 }
 
 @supports (font-variation-settings: normal) {
-  .container {
+  .KamaButton {
     font-family: 'IRANYekanXVF', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
       'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     font-feature-settings: 'ss02';
