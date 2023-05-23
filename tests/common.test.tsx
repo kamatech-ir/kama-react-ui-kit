@@ -13,6 +13,7 @@ import {
   KamaControl,
   KamaAttachment,
   KamaDataTable,
+  KamaFilterValue,
 } from '../src';
 
 describe('Common render', () => {
@@ -37,6 +38,7 @@ describe('Common render', () => {
         </KamaControl.Wrapper>
         <KamaAttachment file={{}} />
         <KamaDataTable columns={[]} data={[]} />
+        <KamaFilterValue />
       </>,
     );
   });
