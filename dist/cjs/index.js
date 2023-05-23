@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.KamaValue = exports.KamaSample = exports.KamaInput = exports.KamaIcon = exports.KamaFilterValue = exports.KamaDataTable = exports.KamaControl = exports.KamaCheckbox = exports.KamaButton = exports.KamaBreadcrumb = exports.KamaAttachment = exports.KamaActionButton = void 0;
+exports.KamaValue = exports.KamaSample = exports.KamaLink = exports.KamaInput = exports.KamaIcon = exports.KamaFilterValue = exports.KamaDataTable = exports.KamaControl = exports.KamaCheckbox = exports.KamaButton = exports.KamaBreadcrumb = exports.KamaAttachment = exports.KamaActionButton = void 0;
 var tslib_1 = require("tslib");
 var KamaActionButton_1 = tslib_1.__importDefault(require("./components/action-button/KamaActionButton"));
 exports.KamaActionButton = KamaActionButton_1.default;
@@ -22,6 +22,8 @@ var KamaIcon_1 = tslib_1.__importDefault(require("./components/icon/KamaIcon"));
 exports.KamaIcon = KamaIcon_1.default;
 var KamaInput_1 = tslib_1.__importDefault(require("./components/input/KamaInput"));
 exports.KamaInput = KamaInput_1.default;
+var KamaLink_1 = tslib_1.__importDefault(require("./components/link/KamaLink"));
+exports.KamaLink = KamaLink_1.default;
 var KamaSample_1 = tslib_1.__importDefault(require("./components/sample/KamaSample"));
 exports.KamaSample = KamaSample_1.default;
 var KamaValue_1 = tslib_1.__importDefault(require("./components/value/KamaValue"));

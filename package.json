@@ -1,6 +1,6 @@
 {
   "name": "kama-react-ui-kit",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Collection of React UI components for Kamatech projects.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
