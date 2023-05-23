@@ -7,6 +7,7 @@ import KamaControl from './components/control/KamaControl';
 import KamaDataTable from './components/data-table/KamaDataTable';
 import KamaFilterValue from './components/filter-value/KamaFilterValue';
 import KamaIcon from './components/icon/KamaIcon';
+import KamaInput from './components/input/KamaInput';
 import KamaSample from './components/sample/KamaSample';
 
 export {
@@ -19,5 +20,6 @@ export {
   KamaDataTable,
   KamaFilterValue,
   KamaIcon,
+  KamaInput,
   KamaSample,
 };

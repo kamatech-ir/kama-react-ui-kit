@@ -1,0 +1,149 @@
+.KamaInput {
+  position: relative;
+  width: 100%;
+
+  &.error {
+    &::after {
+      content: attr(data-error);
+      background-color: var(--red);
+      color: var(--white);
+      display: flex;
+      align-items: flex-end;
+      padding: 3px 15px;
+      border-radius: 15px;
+      width: calc(100% - 30px);
+      height: calc(43px - 6px);
+      position: absolute;
+      top: 25px;
+      z-index: -1;
+      font-size: 10px;
+      font-weight: 400;
+    }
+
+    input,
+    textarea {
+      background-color: var(--white);
+      border: 1px solid var(--red);
+      position: relative;
+    }
+  }
+
+  &.compact {
+    min-height: 40px;
+
+    label {
+      span {
+        top: 12px;
+        font-size: 13px;
+        font-weight: 400;
+      }
+
+      .icon {
+        top: 0;
+      }
+
+      input,
+      textarea {
+        height: 40px;
+        font-size: 13px;
+        font-weight: 400;
+
+        &:focus,
+        &:not(:placeholder-shown) {
+          & ~ span {
+            top: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  &.hasIcon {
+    label {
+      span {
+        right: 45px;
+      }
+
+      input,
+      textarea {
+        padding-right: 45px;
+
+        &:hover {
+          padding-right: 45px;
+        }
+
+        &:focus {
+          padding-right: 45px;
+        }
+      }
+    }
+  }
+
+  label {
+    display: block;
+    width: 100%;
+
+    span {
+      color: var(--gray4);
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      cursor: text;
+    }
+
+    .icon {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      z-index: 9;
+    }
+
+    .indicator {
+      color: var(--gray4);
+      position: absolute;
+      top: 18px;
+      left: 15px;
+      font-size: 10px;
+    }
+
+    input,
+    textarea {
+      color: var(--gray5);
+      width: 100%;
+      height: 50px;
+      padding: 13px 20px 0 0;
+      border: 1px solid var(--gray2);
+      border-radius: 15px;
+      font-size: 14px;
+      font-weight: 500;
+
+      &:hover {
+        padding-right: 20px;
+        border: 1px solid var(--primary);
+      }
+
+      &:focus {
+        padding-right: 20px;
+        outline-color: var(--primary);
+      }
+
+      &:focus,
+      &:not(:placeholder-shown) {
+        & ~ span {
+          top: 7.5px;
+          font-size: 10px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    textarea {
+      padding: 22px 20px 0 0;
+      resize: vertical;
+      height: 100px;
+    }
+  }
+}

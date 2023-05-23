@@ -1,6 +1,6 @@
 import React from 'react';
 import KamaIcon from '../icon/KamaIcon';
-import EmptySVG from '../../assets/images/empty.svg';
+import EmptySVG from '~/assets/images/empty.svg';
 
 type KamaDataTableProps = {
   columns: any[];
