@@ -410,6 +410,149 @@ span.KamaButton.outlined.disabled:active {
   font-size: 20px;
 }
 
+.KamaDatepicker {
+  position: relative;
+}
+.KamaDatepicker:focus-within input {
+  border: 2px solid var(--black);
+}
+.KamaDatepicker.hide .wrapper {
+  display: none;
+}
+.KamaDatepicker input {
+  direction: ltr;
+  text-align: right;
+}
+.KamaDatepicker .clear {
+  position: absolute;
+  left: 10px;
+  top: 2px;
+  width: 45px;
+  height: 45px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.KamaDatepicker .wrapper {
+  background-color: var(--white);
+  position: absolute;
+  border: 1px solid var(--gray2);
+  border-radius: 4px;
+  min-width: 250px;
+  padding: 16px;
+  margin: 0;
+  z-index: 999;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.KamaDatepicker .wrapper .calendar {
+  display: flex;
+  flex-direction: column;
+}
+.KamaDatepicker .wrapper .calendar .header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.KamaDatepicker .wrapper .calendar .header .select {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.KamaDatepicker .wrapper .calendar .header .select select {
+  padding: 2px 0;
+  width: 100%;
+  border: none;
+  appearance: none;
+  text-align: center;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.KamaDatepicker .wrapper .calendar .header .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--gray2);
+  cursor: pointer;
+}
+.KamaDatepicker .wrapper .calendar .header .button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.KamaDatepicker .wrapper .calendar .header .button.previous {
+  margin-right: 0px;
+  margin-left: 8px;
+}
+.KamaDatepicker .wrapper .calendar .header .button.previous img {
+  transform: rotate(180deg);
+}
+.KamaDatepicker .wrapper .calendar .header .button img {
+  width: 12px;
+  height: 12px;
+}
+.KamaDatepicker .wrapper .calendar .body table {
+  width: 100%;
+}
+.KamaDatepicker .wrapper .calendar .body table thead tr th {
+  height: 30px;
+}
+.KamaDatepicker .wrapper .calendar .body table tbody tr td {
+  text-align: center;
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.KamaDatepicker .wrapper .calendar .body table tbody tr td:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.KamaDatepicker .wrapper .calendar .body table tbody tr td.empty {
+  cursor: initial;
+}
+.KamaDatepicker .wrapper .calendar .body table tbody tr td.empty:hover {
+  background-color: initial;
+  border-radius: initial;
+}
+.KamaDatepicker .wrapper .calendar .body table tbody tr td.today {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.KamaDatepicker .wrapper .calendar .body table tbody tr td.active {
+  color: var(--white);
+  background-color: var(--primary);
+  transition: all 0.2s ease-in;
+}
+.KamaDatepicker .wrapper .calendar .body table tbody tr td.disabled {
+  background-color: var(--gray1);
+  cursor: initial;
+}
+.KamaDatepicker .wrapper .calendar .footer {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.KamaDatepicker .wrapper .calendar .footer .button {
+  flex: 1;
+  position: relative;
+  top: 0;
+  border: 1px solid var(--gray2);
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+.KamaDatepicker .wrapper .calendar .footer .button:hover {
+  top: -2px;
+  transition: top 0.2s;
+}
+.KamaDatepicker .wrapper .calendar .footer .button:hover.transparent {
+  color: var(--gray2);
+}
+.KamaDatepicker .wrapper .calendar .footer .button.primary {
+  color: var(--white);
+  background-color: #0193a6;
+}
+
 .KamaFilterValueWrapper {
   display: flex;
   flex-wrap: wrap;

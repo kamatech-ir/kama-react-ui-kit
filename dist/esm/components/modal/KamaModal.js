@@ -2,9 +2,11 @@ import React, { useRef, useState, useEffect, useCallback } from 'react';
 import classNames from 'classnames';
 import KamaButton, { KamaButtonColors } from '../button/KamaButton';
 function KamaModal(_a) {
-    var title = _a.title, subTitle = _a.subTitle, onClose = _a.onClose, footer = _a.footer, _b = _a.bottomSpace, bottomSpace = _b === void 0 ? true : _b, notice = _a.notice, setIsModalVisible = _a.setIsModalVisible, sidebar = _a.sidebar, children = _a.children;
+    var title = _a.title, subTitle = _a.subTitle, onClose = _a.onClose, footer = _a.footer, _b = _a.bottomSpace, bottomSpace = _b === void 0 ? true : _b, notice = _a.notice, _c = _a.setIsModalVisible, setIsModalVisible = _c === void 0 ? function () {
+        return false;
+    } : _c, sidebar = _a.sidebar, children = _a.children;
     var ref = useRef(null);
-    var _c = useState(false), isClosing = _c[0], setIsClosing = _c[1];
+    var _d = useState(false), isClosing = _d[0], setIsClosing = _d[1];
     var closeHandler = function () {
         if (isClosing) {
             return;

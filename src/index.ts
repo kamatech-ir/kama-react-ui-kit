@@ -5,6 +5,7 @@ import KamaButton from './components/button/KamaButton';
 import KamaCheckbox from './components/checkbox/KamaCheckbox';
 import KamaControl from './components/control/KamaControl';
 import KamaDataTable from './components/data-table/KamaDataTable';
+import KamaDatepicker from './components/datepicker/KamaDatepicker';
 import KamaFilterValue from './components/filter-value/KamaFilterValue';
 import KamaIcon from './components/icon/KamaIcon';
 import KamaInput from './components/input/KamaInput';
@@ -21,6 +22,7 @@ export {
   KamaCheckbox,
   KamaControl,
   KamaDataTable,
+  KamaDatepicker,
   KamaFilterValue,
   KamaIcon,
   KamaInput,
