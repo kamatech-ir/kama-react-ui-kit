@@ -1403,6 +1403,55 @@ span.KamaButton.outlined.disabled:active {
     transform: translateX(1px);
   }
 }
+.KamaUploader {
+  background: rgba(94, 204, 223, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  border: 1px dashed var(--light-blue);
+  border-radius: 15px;
+  cursor: pointer;
+}
+.KamaUploader.disabled {
+  background-color: var(--gray2);
+  border-color: var(--gray3);
+  cursor: initial;
+}
+.KamaUploader.disabled .wrapper .content .title {
+  color: var(--gray4);
+}
+.KamaUploader input[type=file] {
+  display: none;
+}
+.KamaUploader .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.KamaUploader .wrapper .icon {
+  display: flex;
+  align-items: flex-end;
+}
+.KamaUploader .wrapper .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50px;
+}
+.KamaUploader .wrapper .content .title {
+  color: var(--light-blue);
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+.KamaUploader .wrapper .content .description {
+  color: var(--gray4);
+  font-weight: 400;
+  font-size: 13px;
+}
+
 .KamaValue {
   display: flex;
   align-items: center;

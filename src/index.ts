@@ -15,6 +15,7 @@ import KamaModal from './components/modal/KamaModal';
 import KamaMultiSelect from './components/multi-select/KamaMultiSelect';
 import KamaSample from './components/sample/KamaSample';
 import KamaSelect from './components/select/KamaSelect';
+import KamaUploader from './components/uploader/KamaUploader';
 import KamaValue from './components/value/KamaValue';
 
 export {
@@ -35,5 +36,6 @@ export {
   KamaMultiSelect,
   KamaSample,
   KamaSelect,
+  KamaUploader,
   KamaValue,
 };
