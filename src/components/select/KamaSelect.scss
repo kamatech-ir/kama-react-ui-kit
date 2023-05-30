@@ -1,0 +1,312 @@
+.KamaSelect {
+  flex: 1;
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.disabled {
+    label,
+    .select {
+      background-color: var(--gray1);
+    }
+  }
+
+  &.open,
+  &.filled {
+    label {
+      color: var(--gray4);
+      top: 2px;
+      right: 16px;
+      padding: 4px;
+      font-size: 10px;
+      font-weight: 400;
+      cursor: initial;
+    }
+  }
+
+  &.open {
+    .select {
+      border-bottom: none;
+      border-radius: 15px 15px 0 0;
+
+      ul {
+        max-height: 190px;
+        visibility: visible;
+      }
+    }
+  }
+
+  &.isCollapsing {
+    .select {
+      border-radius: 15px 15px 0 0;
+    }
+  }
+
+  &.error {
+    // animation: shakeEffect 0.4s;
+
+    &::after {
+      content: attr(data-error);
+      background-color: var(--red);
+      color: var(--white);
+      display: flex;
+      align-items: flex-end;
+      padding: 3px 15px;
+      border-radius: 15px;
+      width: calc(100% - 30px);
+      height: calc(43px - 6px);
+      position: absolute;
+      top: 25px;
+      z-index: -1;
+      font-size: 10px;
+      font-weight: 400;
+    }
+
+    .actions {
+      img {
+        filter: invert(29%) sepia(82%) saturate(1625%) hue-rotate(339deg) brightness(103%) contrast(106%);
+      }
+    }
+
+    .select {
+      border-color: var(--red);
+
+      ul {
+        border-color: var(--red);
+      }
+    }
+  }
+
+  label {
+    color: var(--gray4);
+    background-color: var(--white);
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 9;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  .select {
+    color: var(--gray5);
+    background-color: var(--white);
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    height: 50px;
+    padding: 0 10px;
+    border: 1px solid var(--gray2);
+    border-radius: 15px;
+    font-size: 14px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    .selected {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      position: absolute;
+      top: 22px;
+      right: 20px;
+      max-width: calc(100% - 70px);
+      overflow: hidden;
+
+      img {
+        width: 16px;
+        height: 16px;
+        margin-left: 8px;
+      }
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: row-reverse;
+
+      .action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          transform: rotate(360deg);
+          transition: all 0.2s ease;
+
+          &.open {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .separator {
+        align-self: stretch;
+        background-color: #ccc;
+        margin-bottom: 8px;
+        margin-top: 8px;
+        width: 1px;
+        box-sizing: border-box;
+      }
+    }
+
+    ul {
+      background-color: white;
+      list-style-type: none;
+      margin: 10px 0 0;
+      padding: 4px 0;
+      position: absolute;
+      top: 38px;
+      left: -1px;
+      min-width: calc(100% + 2px - 0.34px);
+      width: 100%;
+      max-width: 300px;
+      max-height: 0;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      border: 1px solid var(--gray2);
+      border-top: none;
+      border-radius: 0 0 15px 15px;
+      z-index: 999;
+      transition: 0.2s linear;
+      visibility: hidden;
+      direction: ltr;
+      box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
+
+      &::-webkit-scrollbar {
+        width: 30px;
+      }
+      &::-webkit-scrollbar-track {
+        border: 14px solid transparent;
+        border-radius: 15px;
+        box-shadow: inset 0 0 5px var(--gray2);
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--gray3);
+        background-clip: content-box;
+        border: 14px solid transparent;
+        border-radius: 15px;
+      }
+
+      &.empty {
+        overflow-y: hidden;
+      }
+
+      .searchContainer {
+        height: 70px;
+        margin: -10px -20px 0 30px;
+        position: relative;
+        direction: rtl;
+
+        &:hover {
+          background-image: none;
+
+          &::after {
+            display: none;
+          }
+        }
+
+        input:hover {
+          box-shadow: none;
+        }
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        height: 26px;
+        // padding: 0 0 0 20px;
+        margin: 0 0 0 20px;
+        direction: rtl;
+        text-align: right;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 12px;
+        font-weight: 400;
+
+        &:not(.disabled) {
+          cursor: pointer;
+
+          &:hover {
+            background-image: linear-gradient(to right, rgba(255, 0, 0, 0), var(--gray2), rgba(255, 0, 0, 0));
+            color: var(--primary);
+            position: relative;
+
+            &::after {
+              content: ' ';
+              display: block;
+              background-color: white;
+              width: 100%;
+              height: 24px;
+              position: absolute;
+              left: 0;
+            }
+
+            span {
+              background-color: white;
+              z-index: 9;
+            }
+          }
+        }
+
+        &.emptyText {
+          padding-right: 20px;
+
+          &:hover {
+            background-image: none;
+          }
+        }
+
+        img {
+          width: 16px;
+          height: 16px;
+          margin-left: 8px;
+        }
+      }
+
+      .search {
+        // padding: 12px 14px;
+        // margin: 10.5px 14.5px;
+      }
+    }
+  }
+}
+
+@keyframes shakeEffect {
+  0% {
+    transform: translateX(1px);
+  }
+  10% {
+    transform: translateX(-1px);
+  }
+  20% {
+    transform: translateX(-3px);
+  }
+  30% {
+    transform: translateX(3px);
+  }
+  40% {
+    transform: translateX(1px);
+  }
+  50% {
+    transform: translateX(-1px);
+  }
+  60% {
+    transform: translateX(-3px);
+  }
+  70% {
+    transform: translateX(3px);
+  }
+  80% {
+    transform: translateX(-1px);
+  }
+  90% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(1px);
+  }
+}
