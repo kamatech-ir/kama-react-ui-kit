@@ -1403,6 +1403,105 @@ span.KamaButton.outlined.disabled:active {
     transform: translateX(1px);
   }
 }
+.KamaTree {
+  height: 100%;
+  overflow-x: auto;
+}
+.KamaTree table {
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+}
+.KamaTree table thead tr {
+  height: 30px;
+}
+.KamaTree table thead tr th {
+  background-color: var(--white);
+  color: var(--gray5);
+  width: 180px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 14px;
+  z-index: 9;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+}
+.KamaTree table thead tr th img {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.KamaTree table tbody tr:hover {
+  background-color: var(--gray);
+}
+.KamaTree table tbody tr:hover td:first-child {
+  border-radius: 0 10px 10px 0;
+}
+.KamaTree table tbody tr:hover td:last-child {
+  border-radius: 10px 0 0 10px;
+}
+.KamaTree table tbody tr:hover td::after {
+  content: " ";
+  background-image: linear-gradient(90deg, var(--gray), hsla(0, 0%, 100%, 0));
+}
+.KamaTree table tbody tr:hover .actions {
+  visibility: visible;
+}
+.KamaTree table tbody tr.root {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.KamaTree table tbody tr.root.expanded td .content {
+  color: var(--primary);
+}
+.KamaTree table tbody tr.root td .content {
+  font-weight: 500;
+}
+.KamaTree table tbody tr td {
+  overflow: hidden;
+  position: relative;
+}
+.KamaTree table tbody tr td::after {
+  content: " ";
+  background-image: linear-gradient(90deg, var(--white), hsla(0, 0%, 100%, 0));
+  width: 20px;
+  height: 100%;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.KamaTree table tbody tr td .content {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.KamaTree table tbody tr td .content .icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.KamaTree table tbody tr td .content .icon img {
+  width: 100%;
+}
+.KamaTree table tbody tr td.actions {
+  visibility: hidden;
+}
+.KamaTree table tbody tr td.actions .icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.KamaTree table tbody tr td.actions .icon img {
+  width: 100%;
+}
+
 .KamaUploader {
   background: rgba(94, 204, 223, 0.2);
   display: flex;
