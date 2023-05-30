@@ -771,6 +771,54 @@ span.KamaButton.outlined.disabled:active {
   transform: rotate(270deg);
 }
 
+.KamaList {
+  display: flex;
+  flex-direction: column;
+}
+.KamaList .row {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 80px;
+  border: 1px solid var(--gray3);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.KamaList .row:hover {
+  border: 2px solid var(--primary);
+}
+.KamaList .row .items {
+  flex: 1;
+  display: flex;
+  overflow-x: hidden;
+}
+.KamaList .row .items .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-right: 20px;
+}
+.KamaList .row .items .item label {
+  color: var(--gray4);
+  white-space: nowrap;
+  font-size: 10px;
+  font-weight: 400;
+}
+.KamaList .row .items .item span {
+  color: var(--gray5);
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+}
+.KamaList .row .actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin: 0 20px;
+}
+
 .KamaModal {
   background: radial-gradient(at bottom left, rgba(1, 156, 176, 0.8) 0, rgba(1, 156, 176, 0.8) 5%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   position: fixed;
