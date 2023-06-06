@@ -1,0 +1,54 @@
+@function columnWidth($col, $reduction: 0px) {
+  $result: calc($col * 100% / 12 - $reduction);
+  @return $result;
+}
+
+@mixin columnWidths($prefix: 'col', $reduction: 0px) {
+  @for $i from 1 to 13 {
+    &.#{$prefix}#{$i} {
+      width: columnWidth($i, $reduction);
+    }
+  }
+}
+
+.KamaColumn {
+  flex: 1 0 0%;
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  padding-left: 16px;
+
+  .context {
+    flex: 1;
+  }
+
+  &.container {
+    margin: 0;
+    padding: 0;
+  }
+
+  &.col {
+    flex: 0 0 auto;
+    transition: width 0.2s ease-in;
+  }
+
+  @include columnWidths();
+}
+
+@media screen and (max-width: 1200px) {
+  .KamaColumn {
+    @include columnWidths('lg');
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .KamaColumn {
+    @include columnWidths('md');
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .KamaColumn {
+    @include columnWidths('sm');
+  }
+}

@@ -1,0 +1,12 @@
+.KamaRow {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+
+  &.horizontal {
+    flex-direction: row;
+  }
+  &.vertical {
+    flex-direction: column;
+  }
+}

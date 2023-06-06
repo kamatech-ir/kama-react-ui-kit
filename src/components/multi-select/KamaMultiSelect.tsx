@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import KamaInput from '../input/KamaInput';
 import { IconTypes } from '../icon/KamaIcon';
 import KamaCheckbox from '../checkbox/KamaCheckbox';
-import ChevronDownAltSVG from 'assets/images/icons/chevron-down.svg';
+import ChevronDownAltSVG from '../../../assets/images/icons/chevron-down.svg';
 
 type KamaMultiSelectProps = {
   label?: string;

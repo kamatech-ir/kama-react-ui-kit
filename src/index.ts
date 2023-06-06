@@ -1,3 +1,4 @@
+// components
 import KamaActionButton from './components/action-button/KamaActionButton';
 import KamaAttachment from './components/attachment/KamaAttachment';
 import KamaBreadcrumb from './components/breadcrumb/KamaBreadcrumb';
@@ -19,7 +20,14 @@ import KamaTree from './components/tree/KamaTree';
 import KamaUploader from './components/uploader/KamaUploader';
 import KamaValue from './components/value/KamaValue';
 
+// layout
+import KamaLayout from './layout/Layout';
+import KamaFormGroup from './layout/grid/KamaFormGroup';
+import KamaRow from './layout/grid/KamaRow';
+import KamaColumn from './layout/grid/KamaColumn';
+
 export {
+  // components
   KamaActionButton,
   KamaAttachment,
   KamaBreadcrumb,
@@ -40,4 +48,10 @@ export {
   KamaSelect,
   KamaUploader,
   KamaValue,
+
+  // layout
+  KamaLayout,
+  KamaFormGroup,
+  KamaRow,
+  KamaColumn,
 };
