@@ -1,5 +1,5 @@
 import { useAppDispatch, useAppSelector } from './redux.hooks';
-import { hideConfirm, showConfirm } from 'redux/slices/confirm.slice';
+import { hideConfirm, showConfirm } from '../redux/slices/confirm.slice';
 
 let resolveCallback: (value: unknown) => void;
 function useConfirm() {

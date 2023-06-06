@@ -1,5 +1,5 @@
 import { useAppDispatch, useAppSelector } from './redux.hooks';
-import { hideLoading, showLoading } from 'redux/slices/loading.slice';
+import { hideLoading, showLoading } from '../redux/slices/loading.slice';
 
 function useLoading() {
   const dispatch = useAppDispatch();

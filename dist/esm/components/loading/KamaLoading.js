@@ -1,6 +1,6 @@
 import React from 'react';
 import { createPortal } from 'react-dom';
-import useLoading from 'hooks/loading.hook';
+import useLoading from '../../hooks/loading.hook';
 import LoadingLogoSVG from '../../../assets/images/loading-logo.svg';
 import LoadingSpinnerSVG from '../../../assets/images/loading-spinner.svg';
 function KamaLoading() {

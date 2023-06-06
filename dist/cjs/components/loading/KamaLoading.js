@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = require("tslib");
 var react_1 = tslib_1.__importDefault(require("react"));
 var react_dom_1 = require("react-dom");
-var loading_hook_1 = tslib_1.__importDefault(require("hooks/loading.hook"));
+var loading_hook_1 = tslib_1.__importDefault(require("../../hooks/loading.hook"));
 var loading_logo_svg_1 = tslib_1.__importDefault(require("../../../assets/images/loading-logo.svg"));
 var loading_spinner_svg_1 = tslib_1.__importDefault(require("../../../assets/images/loading-spinner.svg"));
 function KamaLoading() {

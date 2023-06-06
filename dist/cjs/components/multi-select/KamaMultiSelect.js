@@ -5,7 +5,7 @@ var react_1 = tslib_1.__importStar(require("react"));
 var classnames_1 = tslib_1.__importDefault(require("classnames"));
 var KamaInput_1 = tslib_1.__importDefault(require("../input/KamaInput"));
 var KamaCheckbox_1 = tslib_1.__importDefault(require("../checkbox/KamaCheckbox"));
-var chevron_down_svg_1 = tslib_1.__importDefault(require("assets/images/icons/chevron-down.svg"));
+var chevron_down_svg_1 = tslib_1.__importDefault(require("../../../assets/images/icons/chevron-down.svg"));
 function KamaMultiSelect(_a) {
     var _b;
     var label = _a.label, _c = _a.containerClassName, containerClassName = _c === void 0 ? '' : _c, className = _a.className, _d = _a.searchable, searchable = _d === void 0 ? false : _d, _e = _a.options, options = _e === void 0 ? [] : _e, filterBy = _a.filterBy, displayProcess = _a.displayProcess, _f = _a.displayName, displayName = _f === void 0 ? 'name' : _f, _g = _a.uniqueId, uniqueId = _g === void 0 ? 'id' : _g, icon = _a.icon, value = _a.value, _h = _a.onChange, onChange = _h === void 0 ? function () {

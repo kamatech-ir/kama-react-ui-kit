@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var redux_hooks_1 = require("./redux.hooks");
-var loading_slice_1 = require("redux/slices/loading.slice");
+var loading_slice_1 = require("../redux/slices/loading.slice");
 function useLoading() {
     var dispatch = (0, redux_hooks_1.useAppDispatch)();
     var loadingState = (0, redux_hooks_1.useAppSelector)(function (state) {
