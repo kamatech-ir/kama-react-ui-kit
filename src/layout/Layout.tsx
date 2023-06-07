@@ -8,8 +8,8 @@ import KamaIcon, { IconTypes } from '../components/icon/KamaIcon';
 import KamaInput from '../components/input/KamaInput';
 import KamaConfirm from '../components/confirm/KamaConfirm';
 import KamaLoading from '../components/loading/KamaLoading';
-import ArmSVG from '../../../assets/images/arm.svg';
-import ProfileSVG from '../../../assets/images/profile.svg';
+import ArmSVG from '../../assets/images/arm.svg';
+import ProfileSVG from '../../assets/images/profile.svg';
 
 // duplicate w/ breadcrumb
 export type Sitemap = {

@@ -1,6 +1,6 @@
 import React, { ChangeEvent, DragEvent, InputHTMLAttributes, useRef } from 'react';
 import classNames from 'classnames';
-import RectangleSVG from '../../../assets/images/rectangle.svg';
+import BlankFileSVG from '../../../assets/images/blank-file.svg';
 
 type KamaUploaderProps = {
   title?: string;
@@ -12,7 +12,7 @@ type KamaUploaderProps = {
 function KamaUploader({
   title = 'آپلود فایل',
   description = 'لطفا فایل خود را در این محدوده درگ کنید',
-  icon = RectangleSVG,
+  icon = BlankFileSVG,
   disabled,
   ...props
 }: KamaUploaderProps) {
