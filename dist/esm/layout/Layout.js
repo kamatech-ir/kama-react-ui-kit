@@ -7,8 +7,8 @@ import KamaIcon from '../components/icon/KamaIcon';
 import KamaInput from '../components/input/KamaInput';
 import KamaConfirm from '../components/confirm/KamaConfirm';
 import KamaLoading from '../components/loading/KamaLoading';
-import ArmSVG from '../../../assets/images/arm.svg';
-import ProfileSVG from '../../../assets/images/profile.svg';
+import ArmSVG from '../../assets/images/arm.svg';
+import ProfileSVG from '../../assets/images/profile.svg';
 function MenuItem(_a) {
     var label = _a.label, icon = _a.icon, url = _a.url, isSeleted = _a.isSeleted, _b = _a.items, items = _b === void 0 ? [] : _b, _c = _a.onClick, onClick = _c === void 0 ? function () {
         return false;

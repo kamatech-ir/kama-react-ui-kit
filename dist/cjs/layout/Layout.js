@@ -10,8 +10,8 @@ var KamaIcon_1 = tslib_1.__importDefault(require("../components/icon/KamaIcon"))
 var KamaInput_1 = tslib_1.__importDefault(require("../components/input/KamaInput"));
 var KamaConfirm_1 = tslib_1.__importDefault(require("../components/confirm/KamaConfirm"));
 var KamaLoading_1 = tslib_1.__importDefault(require("../components/loading/KamaLoading"));
-var arm_svg_1 = tslib_1.__importDefault(require("../../../assets/images/arm.svg"));
-var profile_svg_1 = tslib_1.__importDefault(require("../../../assets/images/profile.svg"));
+var arm_svg_1 = tslib_1.__importDefault(require("../../assets/images/arm.svg"));
+var profile_svg_1 = tslib_1.__importDefault(require("../../assets/images/profile.svg"));
 function MenuItem(_a) {
     var label = _a.label, icon = _a.icon, url = _a.url, isSeleted = _a.isSeleted, _b = _a.items, items = _b === void 0 ? [] : _b, _c = _a.onClick, onClick = _c === void 0 ? function () {
         return false;

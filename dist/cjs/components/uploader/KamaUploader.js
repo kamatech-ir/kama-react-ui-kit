@@ -3,9 +3,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var tslib_1 = require("tslib");
 var react_1 = tslib_1.__importStar(require("react"));
 var classnames_1 = tslib_1.__importDefault(require("classnames"));
-var rectangle_svg_1 = tslib_1.__importDefault(require("../../../assets/images/rectangle.svg"));
+var blank_file_svg_1 = tslib_1.__importDefault(require("../../../assets/images/blank-file.svg"));
 function KamaUploader(_a) {
-    var _b = _a.title, title = _b === void 0 ? 'آپلود فایل' : _b, _c = _a.description, description = _c === void 0 ? 'لطفا فایل خود را در این محدوده درگ کنید' : _c, _d = _a.icon, icon = _d === void 0 ? rectangle_svg_1.default : _d, disabled = _a.disabled, props = tslib_1.__rest(_a, ["title", "description", "icon", "disabled"]);
+    var _b = _a.title, title = _b === void 0 ? 'آپلود فایل' : _b, _c = _a.description, description = _c === void 0 ? 'لطفا فایل خود را در این محدوده درگ کنید' : _c, _d = _a.icon, icon = _d === void 0 ? blank_file_svg_1.default : _d, disabled = _a.disabled, props = tslib_1.__rest(_a, ["title", "description", "icon", "disabled"]);
     var inputRef = (0, react_1.useRef)(null);
     var handleBrowseFile = function () {
         var _a;

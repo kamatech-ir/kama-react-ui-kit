@@ -1,9 +1,9 @@
 import { __assign, __rest } from "tslib";
 import React, { useRef } from 'react';
 import classNames from 'classnames';
-import RectangleSVG from '../../../assets/images/rectangle.svg';
+import BlankFileSVG from '../../../assets/images/blank-file.svg';
 function KamaUploader(_a) {
-    var _b = _a.title, title = _b === void 0 ? 'آپلود فایل' : _b, _c = _a.description, description = _c === void 0 ? 'لطفا فایل خود را در این محدوده درگ کنید' : _c, _d = _a.icon, icon = _d === void 0 ? RectangleSVG : _d, disabled = _a.disabled, props = __rest(_a, ["title", "description", "icon", "disabled"]);
+    var _b = _a.title, title = _b === void 0 ? 'آپلود فایل' : _b, _c = _a.description, description = _c === void 0 ? 'لطفا فایل خود را در این محدوده درگ کنید' : _c, _d = _a.icon, icon = _d === void 0 ? BlankFileSVG : _d, disabled = _a.disabled, props = __rest(_a, ["title", "description", "icon", "disabled"]);
     var inputRef = useRef(null);
     var handleBrowseFile = function () {
         var _a;
