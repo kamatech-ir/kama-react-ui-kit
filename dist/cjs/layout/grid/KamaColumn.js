@@ -19,4 +19,3 @@ var KamaColumn = (0, react_1.forwardRef)(function (_a, ref) {
 });
 KamaColumn.displayName = 'KamaColumn';
 exports.default = KamaColumn;
-//# sourceMappingURL=KamaColumn.js.map

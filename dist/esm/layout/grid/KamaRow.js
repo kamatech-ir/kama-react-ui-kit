@@ -11,4 +11,3 @@ function KamaRow(_a) {
 }
 KamaRow.DIRECTION = DIRECTION;
 export default KamaRow;
-//# sourceMappingURL=KamaRow.js.map

@@ -196,4 +196,3 @@ function KamaDatepicker(_a) {
                         }))))))));
 }
 exports.default = KamaDatepicker;
-//# sourceMappingURL=KamaDatepicker.js.map

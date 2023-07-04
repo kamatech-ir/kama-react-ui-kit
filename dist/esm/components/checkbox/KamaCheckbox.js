@@ -12,4 +12,3 @@ function KamaCheckbox(_a) {
         label));
 }
 export default KamaCheckbox;
-//# sourceMappingURL=KamaCheckbox.js.map

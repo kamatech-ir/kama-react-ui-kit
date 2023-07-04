@@ -52,4 +52,3 @@ var KamaRow_1 = tslib_1.__importDefault(require("./layout/grid/KamaRow"));
 exports.KamaRow = KamaRow_1.default;
 var KamaColumn_1 = tslib_1.__importDefault(require("./layout/grid/KamaColumn"));
 exports.KamaColumn = KamaColumn_1.default;
-//# sourceMappingURL=index.js.map

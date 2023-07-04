@@ -37,4 +37,3 @@ function KamaIcon(_a) {
     return (React.createElement("div", __assign({}, props, { className: classList }), imageSource ? React.createElement("img", { src: imageSource, alt: icon }) : null));
 }
 export default KamaIcon;
-//# sourceMappingURL=KamaIcon.js.map

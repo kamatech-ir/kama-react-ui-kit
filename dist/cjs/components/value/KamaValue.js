@@ -11,4 +11,3 @@ function KamaValue(_a) {
             react_1.default.createElement("div", { className: 'value' }, value))));
 }
 exports.default = KamaValue;
-//# sourceMappingURL=KamaValue.js.map

@@ -16,4 +16,3 @@ function useLoading() {
     return { loading: loading, loadingState: loadingState };
 }
 export default useLoading;
-//# sourceMappingURL=loading.hook.js.map

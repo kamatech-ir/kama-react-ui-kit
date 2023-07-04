@@ -9,4 +9,3 @@ export var store = configureStore({
         loading: loadingSlice,
     },
 });
-//# sourceMappingURL=store.js.map

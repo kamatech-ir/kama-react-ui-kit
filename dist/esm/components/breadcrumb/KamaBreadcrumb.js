@@ -28,4 +28,3 @@ function KamaBreadcrumb(_a) {
     })));
 }
 export default KamaBreadcrumb;
-//# sourceMappingURL=KamaBreadcrumb.js.map

@@ -14,4 +14,3 @@ function KamaActionButton(_a) {
         react_1.default.createElement(KamaButton_1.default, { onClick: onClick, disabled: disabled }, label)));
 }
 exports.default = KamaActionButton;
-//# sourceMappingURL=KamaActionButton.js.map

@@ -96,4 +96,3 @@ function KamaLayout(_a) {
         react_1.default.createElement(KamaLoading_1.default, null)));
 }
 exports.default = KamaLayout;
-//# sourceMappingURL=Layout.js.map

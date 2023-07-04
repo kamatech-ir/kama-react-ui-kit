@@ -17,4 +17,3 @@ var KamaColumn = forwardRef(function (_a, ref) {
 });
 KamaColumn.displayName = 'KamaColumn';
 export default KamaColumn;
-//# sourceMappingURL=KamaColumn.js.map

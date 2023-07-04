@@ -159,4 +159,3 @@ function KamaMultiSelect(_a) {
                 }))) : (React.createElement("li", { className: 'disabled' }, "\u0645\u0648\u0631\u062F\u06CC \u06CC\u0627\u0641\u062A \u0646\u0634\u062F"))))));
 }
 export default KamaMultiSelect;
-//# sourceMappingURL=KamaMultiSelect.js.map

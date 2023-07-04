@@ -22,4 +22,3 @@ function KamaFilterValue(_a) {
 KamaFilterValue.Wrapper = KamaFilterValueWrapper;
 KamaFilterValue.Indicator = KamaFilterValueIndicator;
 exports.default = KamaFilterValue;
-//# sourceMappingURL=KamaFilterValue.js.map

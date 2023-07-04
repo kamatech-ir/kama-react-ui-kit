@@ -106,4 +106,3 @@ export default {
     removeNonNumeric: removeNonNumeric,
     uuid: uuid,
 };
-//# sourceMappingURL=tools.js.map

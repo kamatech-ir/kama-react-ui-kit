@@ -17,4 +17,3 @@ function KamaConfirm() {
     return createPortal(component, portalElement);
 }
 export default KamaConfirm;
-//# sourceMappingURL=KamaConfirm.js.map

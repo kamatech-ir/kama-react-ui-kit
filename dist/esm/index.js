@@ -29,4 +29,3 @@ export {
 KamaActionButton, KamaAttachment, KamaBreadcrumb, KamaButton, KamaCheckbox, KamaControl, KamaDataTable, KamaDatepicker, KamaFilterValue, KamaIcon, KamaInput, KamaLink, KamaList, KamaModal, KamaMultiSelect, KamaSample, KamaTree, KamaSelect, KamaUploader, KamaValue, 
 // layout
 KamaLayout, KamaFormGroup, KamaRow, KamaColumn, };
-//# sourceMappingURL=index.js.map

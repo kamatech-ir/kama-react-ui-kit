@@ -41,4 +41,3 @@ function KamaUploader(_a) {
                 React.createElement("div", { className: 'description' }, description)))));
 }
 export default KamaUploader;
-//# sourceMappingURL=KamaUploader.js.map

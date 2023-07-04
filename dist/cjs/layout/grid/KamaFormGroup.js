@@ -7,4 +7,3 @@ function KamaFormGroup(_a) {
     return react_1.default.createElement("div", { className: 'KamaFormGroup' }, children);
 }
 exports.default = KamaFormGroup;
-//# sourceMappingURL=KamaFormGroup.js.map

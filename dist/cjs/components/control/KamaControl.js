@@ -15,4 +15,3 @@ function KamaControl(_a) {
 }
 KamaControl.Wrapper = KamaControlWrapper;
 exports.default = KamaControl;
-//# sourceMappingURL=KamaControl.js.map

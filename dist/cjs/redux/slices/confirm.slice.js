@@ -23,4 +23,3 @@ exports.confirmSlice = (0, toolkit_1.createSlice)({
 });
 exports.showConfirm = (_a = exports.confirmSlice.actions, _a.showConfirm), exports.hideConfirm = _a.hideConfirm;
 exports.default = exports.confirmSlice.reducer;
-//# sourceMappingURL=confirm.slice.js.map

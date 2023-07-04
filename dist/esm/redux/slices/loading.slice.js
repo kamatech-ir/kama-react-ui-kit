@@ -17,4 +17,3 @@ export var loadingSlice = createSlice({
 });
 export var showLoading = (_a = loadingSlice.actions, _a.showLoading), hideLoading = _a.hideLoading;
 export default loadingSlice.reducer;
-//# sourceMappingURL=loading.slice.js.map

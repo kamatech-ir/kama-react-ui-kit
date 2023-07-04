@@ -13,4 +13,3 @@ function KamaLoading() {
     return createPortal(component, portalElement);
 }
 export default KamaLoading;
-//# sourceMappingURL=KamaLoading.js.map

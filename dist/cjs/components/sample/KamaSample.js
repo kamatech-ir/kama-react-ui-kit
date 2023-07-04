@@ -24,4 +24,3 @@ function KamaSample(_a) {
         react_1.default.createElement("span", { onClick: dec }, "-")));
 }
 exports.default = KamaSample;
-//# sourceMappingURL=KamaSample.js.map

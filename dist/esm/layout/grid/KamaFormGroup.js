@@ -4,4 +4,3 @@ function KamaFormGroup(_a) {
     return React.createElement("div", { className: 'KamaFormGroup' }, children);
 }
 export default KamaFormGroup;
-//# sourceMappingURL=KamaFormGroup.js.map

@@ -25,4 +25,3 @@ function KamaList(_a) {
     })));
 }
 exports.default = KamaList;
-//# sourceMappingURL=KamaList.js.map

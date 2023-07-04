@@ -22,4 +22,3 @@ function KamaAttachment(_a) {
             React.createElement(KamaIcon, { icon: 'delete' }))));
 }
 export default KamaAttachment;
-//# sourceMappingURL=KamaAttachment.js.map

@@ -13,4 +13,3 @@ exports.store = (0, toolkit_1.configureStore)({
         loading: loading_slice_1.default,
     },
 });
-//# sourceMappingURL=store.js.map

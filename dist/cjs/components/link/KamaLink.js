@@ -12,4 +12,3 @@ function KamaLink(_a) {
     return disabled ? (react_1.default.createElement("span", { className: (0, classnames_1.default)('KamaLink', 'disabled') }, Content)) : props.target === '_blank' ? (react_1.default.createElement("a", tslib_1.__assign({}, props, { href: props.to.toString(), className: 'KamaLink' }), Content)) : (react_1.default.createElement(react_router_dom_1.Link, tslib_1.__assign({}, props, { className: 'KamaLink' }), Content));
 }
 exports.default = KamaLink;
-//# sourceMappingURL=KamaLink.js.map

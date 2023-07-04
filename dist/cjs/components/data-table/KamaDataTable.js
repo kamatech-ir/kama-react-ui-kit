@@ -41,4 +41,3 @@ function KamaDataTable(_a) {
         react_1.default.createElement("span", null, "\u0645\u0648\u0631\u062F\u06CC \u0628\u0631\u0627\u06CC \u0646\u0645\u0627\u06CC\u0634 \u067E\u06CC\u062F\u0627 \u0646\u0634\u062F :(")))));
 }
 exports.default = KamaDataTable;
-//# sourceMappingURL=KamaDataTable.js.map

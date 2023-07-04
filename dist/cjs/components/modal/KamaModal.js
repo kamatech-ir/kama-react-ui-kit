@@ -59,4 +59,3 @@ function KamaModal(_a) {
                 react_1.default.createElement(KamaButton_1.default, { color: KamaButton_1.KamaButtonColors[notice ? 'PRIMARY' : 'CANCEL'], onClick: onClose }, notice ? 'متوجه شدم' : 'انصراف')))));
 }
 exports.default = KamaModal;
-//# sourceMappingURL=KamaModal.js.map

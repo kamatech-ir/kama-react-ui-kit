@@ -13,4 +13,3 @@ export var layoutSlice = createSlice({
 });
 export var setSidebarStatus = layoutSlice.actions.setSidebarStatus;
 export default layoutSlice.reducer;
-//# sourceMappingURL=layout.slice.js.map

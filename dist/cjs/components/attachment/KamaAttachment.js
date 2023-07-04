@@ -25,4 +25,3 @@ function KamaAttachment(_a) {
             react_1.default.createElement(KamaIcon_1.default, { icon: 'delete' }))));
 }
 exports.default = KamaAttachment;
-//# sourceMappingURL=KamaAttachment.js.map

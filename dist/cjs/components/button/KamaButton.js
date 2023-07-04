@@ -38,4 +38,3 @@ function KamaButton(_a) {
     }
 }
 exports.default = KamaButton;
-//# sourceMappingURL=KamaButton.js.map

@@ -112,4 +112,3 @@ function KamaSelect(_a) {
                 }))) : (react_1.default.createElement("li", { className: 'emptyText' }, "\u0645\u0648\u0631\u062F\u06CC \u06CC\u0627\u0641\u062A \u0646\u0634\u062F"))))));
 }
 exports.default = KamaSelect;
-//# sourceMappingURL=KamaSelect.js.map

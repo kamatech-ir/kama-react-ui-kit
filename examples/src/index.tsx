@@ -1,18 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { KamaSample } from 'kama-react-ui-kit';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <div>
-      <h2>Default KamaSample</h2>
-      <KamaSample />
-    </div>
-    <hr />
-    <div>
-      <h2>KamaSample with predefined value</h2>
-      <KamaSample defaultValue={5} />
-    </div>
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
 );

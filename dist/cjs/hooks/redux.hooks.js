@@ -4,4 +4,3 @@ exports.useAppSelector = exports.useAppDispatch = void 0;
 var react_redux_1 = require("react-redux");
 exports.useAppDispatch = react_redux_1.useDispatch;
 exports.useAppSelector = react_redux_1.useSelector;
-//# sourceMappingURL=redux.hooks.js.map

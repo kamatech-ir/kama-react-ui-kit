@@ -132,4 +132,3 @@ function KamaInput(_a) {
             indicator ? react_1.default.createElement("div", { className: 'indicator' }, indicator) : null)));
 }
 exports.default = KamaInput;
-//# sourceMappingURL=KamaInput.js.map

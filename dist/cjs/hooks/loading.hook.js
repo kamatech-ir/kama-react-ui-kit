@@ -18,4 +18,3 @@ function useLoading() {
     return { loading: loading, loadingState: loadingState };
 }
 exports.default = useLoading;
-//# sourceMappingURL=loading.hook.js.map

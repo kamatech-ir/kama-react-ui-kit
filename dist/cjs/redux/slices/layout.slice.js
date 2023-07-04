@@ -16,4 +16,3 @@ exports.layoutSlice = (0, toolkit_1.createSlice)({
 });
 exports.setSidebarStatus = exports.layoutSlice.actions.setSidebarStatus;
 exports.default = exports.layoutSlice.reducer;
-//# sourceMappingURL=layout.slice.js.map

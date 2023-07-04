@@ -20,4 +20,3 @@ export var confirmSlice = createSlice({
 });
 export var showConfirm = (_a = confirmSlice.actions, _a.showConfirm), hideConfirm = _a.hideConfirm;
 export default confirmSlice.reducer;
-//# sourceMappingURL=confirm.slice.js.map

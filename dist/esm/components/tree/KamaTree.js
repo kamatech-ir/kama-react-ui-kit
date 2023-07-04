@@ -69,4 +69,3 @@ function KamaTree(_a) {
             })))));
 }
 export default KamaTree;
-//# sourceMappingURL=KamaTree.js.map

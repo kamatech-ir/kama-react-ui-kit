@@ -56,4 +56,3 @@ function KamaModal(_a) {
                 React.createElement(KamaButton, { color: KamaButtonColors[notice ? 'PRIMARY' : 'CANCEL'], onClick: onClose }, notice ? 'متوجه شدم' : 'انصراف')))));
 }
 export default KamaModal;
-//# sourceMappingURL=KamaModal.js.map

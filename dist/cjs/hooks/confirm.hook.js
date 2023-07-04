@@ -28,4 +28,3 @@ function useConfirm() {
     return { confirm: confirm, onConfirm: onConfirm, onCancel: onCancel, confirmState: confirmState };
 }
 exports.default = useConfirm;
-//# sourceMappingURL=confirm.hook.js.map

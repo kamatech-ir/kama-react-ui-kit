@@ -8,4 +8,3 @@ function KamaValue(_a) {
             React.createElement("div", { className: 'value' }, value))));
 }
 export default KamaValue;
-//# sourceMappingURL=KamaValue.js.map

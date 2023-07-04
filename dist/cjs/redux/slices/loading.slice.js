@@ -20,4 +20,3 @@ exports.loadingSlice = (0, toolkit_1.createSlice)({
 });
 exports.showLoading = (_a = exports.loadingSlice.actions, _a.showLoading), exports.hideLoading = _a.hideLoading;
 exports.default = exports.loadingSlice.reducer;
-//# sourceMappingURL=loading.slice.js.map

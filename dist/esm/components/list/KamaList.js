@@ -22,4 +22,3 @@ function KamaList(_a) {
     })));
 }
 export default KamaList;
-//# sourceMappingURL=KamaList.js.map
